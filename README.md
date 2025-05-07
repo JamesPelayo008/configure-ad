@@ -26,8 +26,9 @@ This tutorial outlines the set up and connection between a DNS server and a clie
 
 - Create a resource group and a virtual network
 - Set up DNS server VM in Azure 
-- Set up Client VM in Azure 
-- Test connectivity via Powershell in Client VM
+- Set up Client VM in Azure
+- Configure the Client VM to use DNS's Servers private IP
+- Test DNS connectivity via Powershell in the Client VM
 
 <h2>Deployment and Configuration Steps</h2>
 
