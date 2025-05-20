@@ -32,7 +32,7 @@ This tutorial outlines the set up and connection between a DNS server and a clie
 
 Note: The resource group and Vnet are labled as "Active Directory" but this project only focuses in DNS and Client pc set up and connectivity.
 <h2>Deployment and Configuration Steps</h2>
-The first thing were going to want to do is do create a resource group in Azure, the names are completlty customizable in this case  lable it was labeled as "Active Directory", make sure to choose your region in the region box below.
+The first thing were going to want to do is do create a resource group in Azure, the names are completlty customizable in this case it was labeled as "Active Directory", make sure to choose your correct region in the region box below.
 <p>
 <p>
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/5bfed63e-936d-4fff-864b-5e844429eb04" />
