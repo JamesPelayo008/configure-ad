@@ -57,17 +57,18 @@ Once your resource group and Vnet is set up, the next step will be to create the
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next create a simple username and password, this will be used to log in to our virtual machines via remote desktop.
 </p>
 <img width="1119" alt="image" src="https://github.com/user-attachments/assets/ea8661a8-bdd5-4f50-a762-7ddb3e10c886" />
 </p>
+ Once the username and password are created, make sure to check both boxes in the licesing section at the very bottom, if the option is availabe.
 </p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
 </p>
 <img width="942" alt="image" src="https://github.com/user-attachments/assets/301abb4a-2255-4f9a-b961-3e2d30f91c5f" />
 </p>
 </p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
 </p>
 <img width="1118" alt="image" src="https://github.com/user-attachments/assets/0befd5a4-fa44-4451-8e2e-4382ffd76f8b" />
 </p>
