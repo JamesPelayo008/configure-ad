@@ -30,7 +30,7 @@ This tutorial outlines the set up and connection between a DNS server and a clie
 - Configure the Client VM to use DNS's Servers private IP
 - Test DNS connectivity via Powershell in the Client VM
 
-Note: The resource group and Vnet are labled as "Active Directory" but this project only focuses in DNS and Client pc set up and connectivity.
+Note: The resource group and Vnet are labled as "Active Directory" but this project only focuses in DNS and client-pc set up and connectivity.
 <h2>Deployment and Configuration Steps</h2>
 The first thing were going to want to do is do create a resource group in Azure, the names are completlty customizable in this case it was labeled as "Active Directory", make sure to choose your correct region in the region box below.
 <p>
@@ -42,7 +42,8 @@ The first thing were going to want to do is do create a resource group in Azure,
 
 </p>
 <br />
-
+After you create the resource group you'll create a Virtual network, this Virtual Network will allow our DNS server and client-pc to communicate securely within the same private network. Again make sure to choose your correct region.
+</p>
 <p>
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/47980140-3262-40d3-af53-1f5e49fa2095" />
 
