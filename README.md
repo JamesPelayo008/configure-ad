@@ -1,4 +1,4 @@
-<p align="center">
+a<p align="center">
 <img width="472" alt="image" src="https://github.com/user-attachments/assets/7228963c-9c73-4709-8c52-1e0e0bff44c1" />
 </p>
 
@@ -46,10 +46,9 @@ After you create the resource group you'll create a Virtual network, this Virtua
 </p>
 <p>
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/47980140-3262-40d3-af53-1f5e49fa2095" />
-
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<p> 
+Once your resource group and Vnet is set up, the next step will be to create the first virtual machine, which will serve as the DNS server. The name is customizable, but make sure to select the resource group that was made, and in the image section  select Windows Server 2022.
 </p>
 <br />
 
