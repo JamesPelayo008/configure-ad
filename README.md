@@ -57,7 +57,7 @@ Once your resource group and Vnet is set up, the next step will be to create the
 
 </p>
 <p>
-Next create a simple username and password, this will be used to log in to our virtual machines via remote desktop.
+Next for the size section just select an option that has 2 cpus for better processing. After create a simple username and password, this will be used to log in to our virtual machines via remote desktop.
 </p>
 <img width="1119" alt="image" src="https://github.com/user-attachments/assets/ea8661a8-bdd5-4f50-a762-7ddb3e10c886" />
 </p>
@@ -68,28 +68,28 @@ Next create a simple username and password, this will be used to log in to our v
 <img width="942" alt="image" src="https://github.com/user-attachments/assets/301abb4a-2255-4f9a-b961-3e2d30f91c5f" />
 </p>
 </p>
-
+Then, make your way to the network tab and ensure that the virtual network box is set to the one that was created earlier. Once you've verified that its the correct virtual network  click review and create.
 </p>
 <img width="1118" alt="image" src="https://github.com/user-attachments/assets/0befd5a4-fa44-4451-8e2e-4382ffd76f8b" />
 </p>
 </p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Now its time to create the second vitual machine, this virtual machine will serve as our client pc. Follow the same steps listed up above, but this time, make sure to select Windows 10 pro in the image section. 
 </p>
 <img width="1108" alt="image" src="https://github.com/user-attachments/assets/6d1f6fd5-0946-4b3c-9f43-2420afe87d94" />
 </p>
 </p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <img width="1132" alt="image" src="https://github.com/user-attachments/assets/638149cb-3f8f-4de5-9ffe-3756719778ac" />
 </p>
 </p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Once your done and have verfied that everything is correct, click review and create.
 </p>
 <img width="1127" alt="image" src="https://github.com/user-attachments/assets/214548ab-d830-4a0a-9a77-ab2851b02e5d" />
 </p>
 </p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
 </p>
+
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/01461519-e24c-4ca2-be39-77869fda281c" />
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/07092549-32f9-44ed-884f-bf5ed83f2f2b" />
 <img width="1455" alt="image" src="https://github.com/user-attachments/assets/927d18e1-e8b4-4792-88b9-975604ef3914" />
