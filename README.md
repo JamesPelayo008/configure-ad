@@ -1,4 +1,4 @@
-a<p align="center">
+<p align="center">
 <img width="472" alt="image" src="https://github.com/user-attachments/assets/7228963c-9c73-4709-8c52-1e0e0bff44c1" />
 </p>
 
@@ -89,7 +89,9 @@ Once your done and have verfied that everything is correct, click review and cre
 </p>
 
 </p>
-
+</p>
+Our Virtual Machines are now setup, but before you go ahead launch them, you need to change the DNS ip address to static. To do that, go to the network settings of the DNS VM and click on where it says network Interface / IP configuration.
+</p>
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/01461519-e24c-4ca2-be39-77869fda281c" />
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/07092549-32f9-44ed-884f-bf5ed83f2f2b" />
 <img width="1455" alt="image" src="https://github.com/user-attachments/assets/927d18e1-e8b4-4792-88b9-975604ef3914" />
