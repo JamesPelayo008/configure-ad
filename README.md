@@ -93,7 +93,17 @@ Once your done and have verfied that everything is correct, click review and cre
 Our Virtual Machines are now setup, but before you go ahead launch them, you need to change the DNS ip address to static. To do that, go to the network settings of the DNS VM and click on where it says network Interface / IP configuration.
 </p>
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/01461519-e24c-4ca2-be39-77869fda281c" />
+</p>
+</p>
+Next click on "ipconfig1", on the right youll see "Edit IP Configuration" then under "Private IP Address Settings" change the allocation from dynamic to static. Once you've done that click save at the bottom.
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/07092549-32f9-44ed-884f-bf5ed83f2f2b" />
+</p>
+</p>
+After you've done that you can now launch the DNS server VM. Make your way back to Virtual machines on Azure and Copy the public IP address, make sure its the correct one you labeled for the DNS server.
+<img width="1470" alt="image" src="https://github.com/user-attachments/assets/0dcc59d2-fc88-4ee5-a269-23c0562a7892" />
+</p>
+</p>
+Then paste the IP address when adding a new PC on remote desktop
 <img width="1455" alt="image" src="https://github.com/user-attachments/assets/927d18e1-e8b4-4792-88b9-975604ef3914" />
 <img width="1459" alt="image" src="https://github.com/user-attachments/assets/2df99c61-23f1-46d0-9fd4-871c7af9c118" />
 <img width="721" alt="image" src="https://github.com/user-attachments/assets/8763fdf4-06ce-4a0c-82ca-dc4c7b685994" />
