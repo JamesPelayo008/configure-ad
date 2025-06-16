@@ -96,21 +96,43 @@ Our Virtual Machines are now setup, but before you go ahead launch them, you nee
 </p>
 </p>
 Next click on "ipconfig1", on the right youll see "Edit IP Configuration" then under "Private IP Address Settings" change the allocation from dynamic to static. Once you've done that click save at the bottom.
+</p>
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/07092549-32f9-44ed-884f-bf5ed83f2f2b" />
 </p>
 </p>
 After you've done that you can now launch the DNS server VM. Make your way back to Virtual machines on Azure and Copy the public IP address, make sure its the correct one you labeled for the DNS server.
+</p>
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/0dcc59d2-fc88-4ee5-a269-23c0562a7892" />
 </p>
 </p>
-Then paste the IP address when adding a new PC on remote desktop
+Then paste the IP address when adding a new PC on remote desktop.
+</p>
+
 <img width="1455" alt="image" src="https://github.com/user-attachments/assets/927d18e1-e8b4-4792-88b9-975604ef3914" />
+</p>
+</p>
+Once you open the VM, the first thing that should pop up on the screen is server manager.
+</p>
 <img width="1459" alt="image" src="https://github.com/user-attachments/assets/2df99c61-23f1-46d0-9fd4-871c7af9c118" />
+</p>
+</p>
+Next right click the windows icon on the bottom left and select "Run" once its open type in "wf.msc".
+</p>
+</p>
 <img width="721" alt="image" src="https://github.com/user-attachments/assets/8763fdf4-06ce-4a0c-82ca-dc4c7b685994" />
+</p>
+</p>
+This will open up "Windows Defender FireWall with Advanced Security", now under where it says "Public Profile is Active" click on "Windows Firewall Properties" and change the fire wall state from on to off on all three profiles Domain, Private, and Public.
+</p>
 <img width="1435" alt="image" src="https://github.com/user-attachments/assets/b992db5f-c1f9-4bd2-acbb-5b1715f654d0" />
 <img width="1455" alt="image" src="https://github.com/user-attachments/assets/4f4eb947-d8dd-4bbf-9d76-cdf27b1fcb02" />
 <img width="1463" alt="image" src="https://github.com/user-attachments/assets/e64ae773-5a8d-40b4-aaa6-1c3dc94614c7" />
+</p>
+</p>
+Once you get to ipsec settings click Apply and Ok to close.
+</p>
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/5fac0d39-c363-4c12-bc17-b02c5c69447f" />
+</p>
 <img width="1461" alt="image" src="https://github.com/user-attachments/assets/22580133-0ae8-443e-81a1-d4f18cf10106" />
 <img width="1463" alt="image" src="https://github.com/user-attachments/assets/7fd90a41-4df4-47fa-89ad-4a91b6556bf0" />
 <img width="1444" alt="image" src="https://github.com/user-attachments/assets/8b3df1e0-6260-4b16-8bb2-6b882ef148e9" />
