@@ -54,21 +54,21 @@ Once your resource group and Vnet is set up, the next step will be to create the
 
 <p>
   <img width="1464" alt="image" src="https://github.com/user-attachments/assets/be09457d-90b0-406d-ba72-5eec041fe661" />
-
 </p>
 <p>
 Next for the size section just select an option that has 2 cpus for better processing. After create a simple username and password, this will be used to log in to our virtual machines via remote desktop.
 </p>
 <img width="1119" alt="image" src="https://github.com/user-attachments/assets/ea8661a8-bdd5-4f50-a762-7ddb3e10c886" />
 </p>
+</p>
  Once the username and password are created, make sure to check both boxes in the licesing section at the very bottom, if the option is availabe.
 </p>
-
 </p>
 <img width="942" alt="image" src="https://github.com/user-attachments/assets/301abb4a-2255-4f9a-b961-3e2d30f91c5f" />
 </p>
 </p>
 Then, make your way to the network tab and ensure that the virtual network box is set to the one that was created earlier. Once you've verified that its the correct virtual network  click review and create.
+</p>
 </p>
 <img width="1118" alt="image" src="https://github.com/user-attachments/assets/0befd5a4-fa44-4451-8e2e-4382ffd76f8b" />
 </p>
@@ -78,24 +78,23 @@ Now its time to create the second vitual machine, this virtual machine will serv
 <img width="1108" alt="image" src="https://github.com/user-attachments/assets/6d1f6fd5-0946-4b3c-9f43-2420afe87d94" />
 </p>
 </p>
-</p>
 <img width="1132" alt="image" src="https://github.com/user-attachments/assets/638149cb-3f8f-4de5-9ffe-3756719778ac" />
 </p>
 </p>
 Once your done and have verfied that everything is correct, click review and create.
 </p>
+</p>
 <img width="1127" alt="image" src="https://github.com/user-attachments/assets/214548ab-d830-4a0a-9a77-ab2851b02e5d" />
 </p>
 </p>
-
-</p>
-</p>
 Our Virtual Machines are now setup, but before you go ahead launch them, you need to change the DNS ip address to static. To do that, go to the network settings of the DNS VM and click on where it says network Interface / IP configuration.
+</p>
 </p>
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/01461519-e24c-4ca2-be39-77869fda281c" />
 </p>
 </p>
 Next click on "ipconfig1", on the right youll see "Edit IP Configuration" then under "Private IP Address Settings" change the allocation from dynamic to static. Once you've done that click save at the bottom.
+</p>
 </p>
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/07092549-32f9-44ed-884f-bf5ed83f2f2b" />
 </p>
@@ -107,7 +106,7 @@ After you've done that you can now launch the DNS server VM. Make your way back 
 </p>
 Then paste the IP address when adding a new PC on remote desktop.
 </p>
-
+</p>
 <img width="1455" alt="image" src="https://github.com/user-attachments/assets/927d18e1-e8b4-4792-88b9-975604ef3914" />
 </p>
 </p>
@@ -124,6 +123,7 @@ Next right click the windows icon on the bottom left and select "Run" once its o
 </p>
 This will open up "Windows Defender FireWall with Advanced Security", now under where it says "Public Profile is Active" click on "Windows Firewall Properties" and change the fire wall state from on to off on all three profiles Domain, Private, and Public.
 </p>
+</p>
 <img width="1435" alt="image" src="https://github.com/user-attachments/assets/b992db5f-c1f9-4bd2-acbb-5b1715f654d0" />
 <img width="1455" alt="image" src="https://github.com/user-attachments/assets/4f4eb947-d8dd-4bbf-9d76-cdf27b1fcb02" />
 <img width="1463" alt="image" src="https://github.com/user-attachments/assets/e64ae773-5a8d-40b4-aaa6-1c3dc94614c7" />
@@ -134,12 +134,36 @@ Once you get to ipsec settings click Apply and Ok to close.
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/5fac0d39-c363-4c12-bc17-b02c5c69447f" />
 </p>
 </p>
-Now back in Azure  copy the private ip address of the DNS server, youll use this for the DNS settings in the client-pc VM+.
+Now back in Azure  copy the private ip address of the DNS server, youll use this for the DNS settings in the client-pc VM.
+</p>
 <img width="1461" alt="image" src="https://github.com/user-attachments/assets/22580133-0ae8-443e-81a1-d4f18cf10106" />
+</p>
+</p>
+After you copy the IP address go to the client pc's network settings, and click on the network interface card.
+</p>
+</p>
 <img width="1463" alt="image" src="https://github.com/user-attachments/assets/7fd90a41-4df4-47fa-89ad-4a91b6556bf0" />
+</p>
+</p>
+Then under settings select "DNS servers" and change it to custom. After you've slected custom paste the DNS server's private ip address in the box below and click save.
+</p>
+</p>
 <img width="1444" alt="image" src="https://github.com/user-attachments/assets/8b3df1e0-6260-4b16-8bb2-6b882ef148e9" />
+</p>
+</p>
+Now your going to want to restart the client VM so that the changes fully apply
+</p>
+</p>
 <img width="1463" alt="image" src="https://github.com/user-attachments/assets/f5dab384-cdaf-4640-aaf1-5797b720e5f6" />
+</p>
+</p>
+Once the VM restarts go ahead and and lauch the client VM via remote desktop.
+</p>
+</p>
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/c9483c2c-f98a-421f-8a96-26f6b6cc7917" />
+</p>
+</p>
+
 <img width="1456" alt="image" src="https://github.com/user-attachments/assets/856b71dc-f44a-4c75-810a-e8cd1354dbb2" />
 <img width="1467" alt="image" src="https://github.com/user-attachments/assets/9b69a4fb-b9b9-4076-8e5e-bc800fce679c" />
 <img width="1460" alt="image" src="https://github.com/user-attachments/assets/931110c6-0ad8-44eb-8140-aacbfa8d2cfa" />
