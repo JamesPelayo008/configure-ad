@@ -133,6 +133,8 @@ Once you get to ipsec settings click Apply and Ok to close.
 </p>
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/5fac0d39-c363-4c12-bc17-b02c5c69447f" />
 </p>
+</p>
+Now back in Azure  copy the private ip address of the DNS server, youll use this for the DNS settings in the client-pc VM+.
 <img width="1461" alt="image" src="https://github.com/user-attachments/assets/22580133-0ae8-443e-81a1-d4f18cf10106" />
 <img width="1463" alt="image" src="https://github.com/user-attachments/assets/7fd90a41-4df4-47fa-89ad-4a91b6556bf0" />
 <img width="1444" alt="image" src="https://github.com/user-attachments/assets/8b3df1e0-6260-4b16-8bb2-6b882ef148e9" />
