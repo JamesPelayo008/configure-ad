@@ -87,19 +87,19 @@ Once your done and have verfied that everything is correct, click review and cre
 <img width="1127" alt="image" src="https://github.com/user-attachments/assets/214548ab-d830-4a0a-9a77-ab2851b02e5d" />
 </p>
 </p>
-Our Virtual Machines are now setup, but before you go ahead launch them, you need to change the DNS ip address to static. To do that, go to the network settings of the DNS VM and click on where it says network Interface / IP configuration.
+The Virtual Machines are now setup, but before launching them, you need to change the DNS ip address to static. To do that, go to network settings of the DNS VM and click on where it says network Interface / IP configuration.
 </p>
 </p>
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/01461519-e24c-4ca2-be39-77869fda281c" />
 </p>
 </p>
-Next click on "ipconfig1", on the right youll see "Edit IP Configuration" then under "Private IP Address Settings" change the allocation from dynamic to static. Once you've done that click save at the bottom.
+Next click "ipconfig1", on the right youll see "Edit IP Configuration" then under "Private IP Address Settings" change the allocation from dynamic to static. Once you've done that click save at the bottom.
 </p>
 </p>
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/07092549-32f9-44ed-884f-bf5ed83f2f2b" />
 </p>
 </p>
-After you've done that you can now launch the DNS server VM. Make your way back to Virtual machines on Azure and Copy the public IP address, make sure its the correct one you labeled for the DNS server.
+ You can now launch the DNS server VM. Make your way back to Virtual machines on Azure and Copy the public IP address, make sure its the correct one you labeled for the DNS server.
 </p>
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/0dcc59d2-fc88-4ee5-a269-23c0562a7892" />
 </p>
@@ -134,40 +134,58 @@ Once you get to ipsec settings click Apply and Ok to close.
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/5fac0d39-c363-4c12-bc17-b02c5c69447f" />
 </p>
 </p>
-Now back in Azure  copy the private ip address of the DNS server, youll use this for the DNS settings in the client-pc VM.
+ Back in Azure copy the private ip address of the DNS server, you'll use this for the DNS settings in the client-pc VM.
 </p>
 <img width="1461" alt="image" src="https://github.com/user-attachments/assets/22580133-0ae8-443e-81a1-d4f18cf10106" />
 </p>
 </p>
-After you copy the IP address go to the client pc's network settings, and click on the network interface card.
+After the IP address is copied, go to client pc's network settings, and click on the network interface card.
 </p>
 </p>
 <img width="1463" alt="image" src="https://github.com/user-attachments/assets/7fd90a41-4df4-47fa-89ad-4a91b6556bf0" />
 </p>
 </p>
-Then under settings select "DNS servers" and change it to custom. After you've slected custom paste the DNS server's private ip address in the box below and click save.
+Then under settings select "DNS servers" and change it to custom. After you've slected custom, paste the DNS server's private ip address in the box below and click save.
 </p>
 </p>
 <img width="1444" alt="image" src="https://github.com/user-attachments/assets/8b3df1e0-6260-4b16-8bb2-6b882ef148e9" />
 </p>
 </p>
-Now your going to want to restart the client VM so that the changes fully apply
+Restart the client VM to ensure all changes fully apply.
 </p>
 </p>
 <img width="1463" alt="image" src="https://github.com/user-attachments/assets/f5dab384-cdaf-4640-aaf1-5797b720e5f6" />
 </p>
 </p>
-Once the VM restarts go ahead and and lauch the client VM via remote desktop.
+Once the VM restarts launch the client VM via remote desktop.
 </p>
 </p>
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/c9483c2c-f98a-421f-8a96-26f6b6cc7917" />
 </p>
 </p>
-
+Now you're going to check connectivity of the client pc and the DNS server via powershell. Once you log on into the client VM, in the search bar type powershell to launch it.
+</p>
+</p>
 <img width="1456" alt="image" src="https://github.com/user-attachments/assets/856b71dc-f44a-4c75-810a-e8cd1354dbb2" />
+</p>
+</p>
+Next  type in "ping 10.0.0.4" to test connectivity with the DNS server.
+</p>
+</p>
 <img width="1467" alt="image" src="https://github.com/user-attachments/assets/9b69a4fb-b9b9-4076-8e5e-bc800fce679c" />
+</p>
+</p>
+If the ping is succsesful you'll see replies from the ip address, if not double check in Azure and confirm that the correct private ip address set or check the fire wall properties in the DNS server VM.
+</p>
+</p>
 <img width="1460" alt="image" src="https://github.com/user-attachments/assets/931110c6-0ad8-44eb-8140-aacbfa8d2cfa" />
+</p>
+</p>
+After testing connectivity type "ip config /all" and check that the DNS server output matches the private ip address.
+</p>
+</p>
 <img width="1426" alt="image" src="https://github.com/user-attachments/assets/e6645bfe-02d7-435a-9c8a-8678db32994b" />
+Once you've confirm that the output is correct, you've sucssessfully connected the client pc to the DNS server. This completes the final step of the tutorial.
 <img width="1446" alt="image" src="https://github.com/user-attachments/assets/1aee37db-32ac-4664-97c9-3d4193a0c9d2" />
 <img width="1467" alt="image" src="https://github.com/user-attachments/assets/1a5aad89-7865-4b8e-b776-14e1df991fda" />
 
