@@ -32,7 +32,10 @@ This tutorial outlines the set up and connection between a DNS server and a clie
 
 Note: The resource group and Vnet are labled as "Active Directory" but this project only focuses in DNS and client-pc set up and connectivity.
 <h2>Deployment and Configuration Steps</h2>
-The first thing were going to want to do is do create a resource group in Azure, the names are completlty customizable in this case it was labeled as "Active Directory", make sure to choose your correct region in the region box below.
+
+<h2>Setup Virtual Machines</h2>
+ 
+The first step is to create a resource group in Azure, the names customizable, in this case it was labeled as "Active Directory", make sure to choose your correct region in the region box below.
 <p>
 <p>
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/5bfed63e-936d-4fff-864b-5e844429eb04" />
@@ -48,7 +51,7 @@ After you create the resource group you'll create a Virtual network, this Virtua
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/47980140-3262-40d3-af53-1f5e49fa2095" />
 </p>
 <p> 
-Once your resource group and Vnet is set up, the next step will be to create the first virtual machine, which will serve as the DNS server. The name is customizable, but make sure to select the resource group that was made, and in the image section  select Windows Server 2022.
+ The next step will be to create the first virtual machine, which will serve as the DNS server. The name is customizable, but make sure to select the resource group that was made, and in the image section select Windows Server 2022.
 </p>
 <br />
 
@@ -73,7 +76,7 @@ Then, make your way to the network tab and ensure that the virtual network box i
 <img width="1118" alt="image" src="https://github.com/user-attachments/assets/0befd5a4-fa44-4451-8e2e-4382ffd76f8b" />
 </p>
 </p>
-Now its time to create the second vitual machine, this virtual machine will serve as our client pc. Follow the same steps listed up above, but this time, make sure to select Windows 10 pro in the image section. 
+Now you'll create the second virtual machine, this virtual machine will serve as our client pc. Follow the same steps listed up above, but this time, make sure to select Windows 10 pro in the image section. 
 </p>
 <img width="1108" alt="image" src="https://github.com/user-attachments/assets/6d1f6fd5-0946-4b3c-9f43-2420afe87d94" />
 </p>
@@ -87,6 +90,8 @@ Once your done and have verfied that everything is correct, click review and cre
 <img width="1127" alt="image" src="https://github.com/user-attachments/assets/214548ab-d830-4a0a-9a77-ab2851b02e5d" />
 </p>
 </p>
+
+<h2> DNS IP Setup & Client Configuration</h2>
 The Virtual Machines are now setup, but before launching them, you need to change the DNS ip address to static. To do that, go to network settings of the DNS VM and click on where it says network Interface / IP configuration.
 </p>
 </p>
@@ -163,6 +168,8 @@ Once the VM restarts launch the client VM via remote desktop.
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/c9483c2c-f98a-421f-8a96-26f6b6cc7917" />
 </p>
 </p>
+
+<h2>Client & DNS Server Connectivity Test</h2>
 Now you're going to check connectivity of the client pc and the DNS server via powershell. Once you log on into the client VM, in the search bar type powershell to launch it.
 </p>
 </p>
