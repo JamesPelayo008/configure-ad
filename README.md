@@ -35,7 +35,7 @@ Note: The resource group and Vnet are labled as "Active Directory" but this proj
 
 <h2>Setup Virtual Machines</h2>
  
-The first step is to create a resource group in Azure, the names customizable, in this case it was labeled as "Active Directory", make sure to choose your correct region in the region box below.
+The first step is to create a resource group in Azure, the names are customizable, in this case it was labeled as "Active Directory", make sure to choose your correct region in the region box below.
 <p>
 <p>
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/5bfed63e-936d-4fff-864b-5e844429eb04" />
