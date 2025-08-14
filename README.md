@@ -31,7 +31,7 @@ This tutorial outlines the set up and connection between a DNS server and a clie
 - Test DNS connectivity via Powershell in the Client VM
 
 Note: The resource group and Vnet are labled as "Active Directory" but this project only focuses in DNS and client-pc set up and connectivity.
-<h2>Deployment and Configuration Steps</h2>
+
 
 <h2>Setup Virtual Machines</h2>
  
@@ -192,8 +192,19 @@ After testing connectivity type "ip config /all" and check that the DNS server o
 </p>
 </p>
 <img width="1426" alt="image" src="https://github.com/user-attachments/assets/e6645bfe-02d7-435a-9c8a-8678db32994b" />
+</p>
+</p>
 Once you've confirm that the output is correct, you've sucssessfully connected the client pc to the DNS server. This completes the final step of the tutorial.
+</p>
+</p>
 <img width="1446" alt="image" src="https://github.com/user-attachments/assets/1aee37db-32ac-4664-97c9-3d4193a0c9d2" />
+</p>
+</p>
+Make sure to stop or delete the virtual machines and resource groups once your done to avoid unesessary charges.
+
+This concludes the tutorial, you should now have a clearer understanding of how a client PC connects to a DNS server, which you can confidently apply in the future.
+</p>
+</p>
 <img width="1467" alt="image" src="https://github.com/user-attachments/assets/1a5aad89-7865-4b8e-b776-14e1df991fda" />
 
 
